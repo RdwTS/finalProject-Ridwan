@@ -38,7 +38,7 @@ Berikut beberapa perintah yang dapat digunakan untuk membangun dan menjalankan p
 | `gradle test` | Menjalankan semua unit test |
 | `gradle cucumber` | Menjalankan semua skenario Cucumber |
 | `gradle cucumber -Ptags="@valid-login"` | Menjalankan Cucumber berdasarkan tag tertentu |
-| `allure serve build/allure-results` | Menjalankan allure report |
+| `allure serve build/allure-results` | Menjalankan allure report (sebelum menjalankan ini jalankan dahulu "gradlew clean test") |
 
 > **Catatan:** Pastikan Anda sudah menginstall Gradle dan JDK yang sesuai sebelum menjalankan perintah di atas.
 
