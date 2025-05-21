@@ -1,3 +1,5 @@
+package ridwan;
+
 import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
