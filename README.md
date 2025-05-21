@@ -12,6 +12,7 @@ This repository contains a sample GitHub Actions setup for CI/CD automation.
 - **GitHub Actions**: CI/CD automation
 - **YAML**: Workflow configuration
 - **Gradle** – sebagai build tool
+- **Allure** – hasil report
 
 
 ## 🚀 Features
@@ -37,6 +38,7 @@ Berikut beberapa perintah yang dapat digunakan untuk membangun dan menjalankan p
 | `gradle test` | Menjalankan semua unit test |
 | `gradle cucumber` | Menjalankan semua skenario Cucumber |
 | `gradle cucumber -Ptags="@valid-login"` | Menjalankan Cucumber berdasarkan tag tertentu |
+| `allure serve build/allure-results` | Menjalankan allure report |
 
 > **Catatan:** Pastikan Anda sudah menginstall Gradle dan JDK yang sesuai sebelum menjalankan perintah di atas.
 
