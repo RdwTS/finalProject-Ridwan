@@ -5,63 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a722a248-db2a-45d1-b105-f72aad9ce7f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/selenium-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/testWebAndAPI-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/APITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/CucumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/page/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/page/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/page/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/stepdef/ApiStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/stepdef/CheckoutStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/stepdef/CucumberHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/stepdef/LoginStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/API-test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/API.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/checkout.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/jsonSchema/getSingleUserJsonSchema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/SimpleTestSuite/SimpleTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/SimpleTestSuite/SimpleTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/bullet_point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/collapseall.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/failed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-ridwan.APITest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-ridwan.LoginTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/navigator-bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/SimpleTest.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/SimpleTestSuite/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/skipped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/testng-reports1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/testng-reports2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/testng.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +30,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FinalProject-ridwan" type="f1a62948:ProjectNode" />
+                <item name="API-WebAutomationGitAction" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -174,7 +120,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Ridwan/Learn/QA/project/API-WebAutomationGitAction/src/test/java/stepdef",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"

@@ -71,7 +71,7 @@ tasks.test {
                 main = "io.cucumber.core.cli.Main"
                 classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
                 args = [
-                        '--plugin','html:reports/testWebAndAPI-report.html',
+                        '--plugin','html:reports/test-report.html',
                         '--plugin','pretty',
                         '--glue','ridwan',
                         '--tags',"${tags}",
@@ -80,6 +80,45 @@ tasks.test {
             }
         }
     }
+
+    tasks.register('cucumberApi') {
+        description = "Run all cucumber scenarios tagged with @api"
+        dependsOn assemble, compileTestJava
+        doLast {
+            javaexec {
+                main = "io.cucumber.core.cli.Main"
+                classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+                args = [
+                        '--plugin', 'html:reports/api-report.html',
+                        '--plugin', 'json:reports/api-report.json',
+                        '--plugin', 'pretty',
+                        '--glue', 'ridwan.stepdef',
+                        '--tags', '@api and not @exclude',
+                        'src/test/resources'
+                ]
+            }
+        }
+    }
+
+    tasks.register('cucumberWeb') {
+        description = "Run all cucumber scenarios tagged with @web"
+        dependsOn assemble, compileTestJava
+        doLast {
+            javaexec {
+                main = "io.cucumber.core.cli.Main"
+                classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+                args = [
+                        '--plugin', 'html:reports/web-report.html',
+                        '--plugin', 'json:reports/web-report.json',
+                        '--plugin', 'pretty',
+                        '--glue', 'ridwan.stepdef',
+                        '--tags', '@web and not @exclude',
+                        'src/test/resources'
+                ]
+            }
+        }
+    }
+
 
 //    tasks.register('cucumberJUnit', Test) {
 //        useJUnit() // CucumberTest (JUnit)

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # API-WebAutomationGitAction
 
 
@@ -33,13 +33,15 @@ This repository contains a sample GitHub Actions setup for CI/CD automation.
 
 Berikut beberapa perintah yang dapat digunakan untuk membangun dan menjalankan pengujian pada proyek ini:
 
-| Perintah | Keterangan |
-|---------|------------|
-| `gradle build` | Melakukan build proyek secara keseluruhan |
-| `gradle test` | Menjalankan semua unit test |
-| `gradle cucumber` | Menjalankan semua skenario Cucumber |
-| `gradle cucumber -Ptags="@valid-login"` | Menjalankan Cucumber berdasarkan tag tertentu |
-| `allure serve build/allure-results` | Menjalankan allure report (sebelum menjalankan ini jalankan dahulu "gradlew clean test") |
+| Perintah                                | Keterangan                                                                             |
+|-----------------------------------------|----------------------------------------------------------------------------------------|
+| `gradle build`                          | Melakukan build proyek secara keseluruhan                                              |
+| `gradle test`                           | Menjalankan semua unit test                                                            |
+| `gradle cucumber`                       | Menjalankan semua skenario Cucumber                                                    |
+| `gradle cucumberWeb`                    | Menjalankan skenario Cucumber Automation Web                                      |
+| `gradle cucumberApi`                    | Menjalankan skenario Cucumber Automation Api                                      |
+| `gradle cucumber -Ptags="@valid-login"` | Menjalankan Cucumber berdasarkan tag tertentu                                          |
+| `allure serve build/allure-results`     | Menjalankan allure report (sebelum menjalankan ini jalankan dahulu "gradlew clean test") |
 
 > **Catatan:** Pastikan Anda sudah menginstall Gradle dan JDK yang sesuai sebelum menjalankan perintah di atas.
 
@@ -51,7 +53,4 @@ Berikut beberapa perintah yang dapat digunakan untuk membangun dan menjalankan p
 ---
 
 Dibuat oleh [RdwTS](https://github.com/RdwTS)
-=======
-# finalProject-Ridwan
-finalProject
->>>>>>> 5b618cf8403581c4067d077cf66b4aa820184933
+
