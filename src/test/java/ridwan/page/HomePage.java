@@ -1,6 +1,7 @@
 package ridwan.page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,6 +20,8 @@ public class HomePage {
     By navBarLogin = By.id("login2");
     By categories = By.id("cat");
     By navbarLogout = By.id("logout2");
+    By productSamsungS6 = By.xpath("//*[@id=\"tbodyid\"]/div[1]/div/div/h4");
+
 
 
     public HomePage(WebDriver driver){
@@ -49,6 +52,16 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable(navBarLogin));
         WebElement loginNav = wait.until(ExpectedConditions.visibilityOfElementLocated(navBarLogin));
         assertEquals("Log in", loginNav.getText());
+    }
+
+    public void clickProductSamsungS6 (){
+        WebElement productButton = wait.until(ExpectedConditions.elementToBeClickable(productSamsungS6));
+        try {
+            productButton.click(); // Klik pakai Selenium
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", productButton);// Klik pakai JavaScript
+        }
+//        driver.findElement(buttonLogin).click();
     }
 
 

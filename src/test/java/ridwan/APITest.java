@@ -13,6 +13,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 //import static jdk.internal.vm.vector.VectorSupport.extract;
 
+
 public class APITest {
 
     public static String createdUserId;
@@ -30,8 +31,6 @@ public class APITest {
                 .assertThat().statusCode(200)
                 .assertThat().body("data.id.size()", Matchers.equalTo(20));
 
-
-
     }
 
     @Test(priority = 2)
@@ -48,7 +47,7 @@ public class APITest {
         String dateOfBirth = "1999-06-07T22:16:47.420Z";
         String phone       = "021-147258";
 
-        // Lokasi (nested object)
+        // Lokasi parameter
         String street   = "jlnPancoratBarat, Jakarta Selatan";
         String city     = "DKI-JAKARTA";
         String state    = "Indonesia";
@@ -58,7 +57,7 @@ public class APITest {
         String registerDate = "2025-05-19T12:34:56.000Z";
         String updatedDate  = "2025-05-19T12:34:56.000Z";
 
-        // `location`
+        // location Json
         JSONObject locationJson = new JSONObject();
         locationJson.put("street", street);
         locationJson.put("city", city);
@@ -66,7 +65,7 @@ public class APITest {
         locationJson.put("country", country);
         locationJson.put("timezone", timezone);
 
-        // Buat objek utama (fieldJson)
+
         JSONObject fieldJson = new JSONObject();
         fieldJson.put("title", title);
         fieldJson.put("firstName", firstName);
@@ -80,8 +79,7 @@ public class APITest {
         fieldJson.put("updatedDate", updatedDate);
         fieldJson.put("location", locationJson);
 
-        //include header Json format
-        Response response = given().log().all() // for print entire request to console
+        Response response = given().log().all()
                                     .header("app-id", "63a804408eb0cb069b57e43a")
                                     .header("Content-Type","application/json")
                                     .header("Accept","application/json")

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-22T10:54:44 ICT" name="SimpleTestSuite" finished-at="2025-05-22T10:54:54 ICT" duration-ms="9357">
+    <groups>
+    </groups>
+    <test started-at="2025-05-22T10:54:44 ICT" name="SimpleTest" finished-at="2025-05-22T10:54:54 ICT" duration-ms="9357">
+      <class name="ridwan.LoginTest">
+        <test-method signature="loginTest()[pri:0, instance:ridwan.LoginTest@c755b2]" started-at="2025-05-22T10:54:49 ICT" name="loginTest" finished-at="2025-05-22T10:54:54 ICT" duration-ms="4658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- ridwan.LoginTest -->
+      <class name="ridwan.APITest">
+        <test-method signature="getUserList()[pri:1, instance:ridwan.APITest@6f94fb9d]" started-at="2025-05-22T10:54:44 ICT" name="getUserList" finished-at="2025-05-22T10:54:46 ICT" duration-ms="1832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserList -->
+        <test-method signature="createNewUser()[pri:2, instance:ridwan.APITest@6f94fb9d]" started-at="2025-05-22T10:54:46 ICT" name="createNewUser" finished-at="2025-05-22T10:54:47 ICT" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewUser -->
+        <test-method signature="getUserbyID()[pri:3, instance:ridwan.APITest@6f94fb9d]" started-at="2025-05-22T10:54:47 ICT" name="getUserbyID" finished-at="2025-05-22T10:54:47 ICT" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserbyID -->
+        <test-method signature="getUserbyINegative()[pri:4, instance:ridwan.APITest@6f94fb9d]" started-at="2025-05-22T10:54:47 ICT" name="getUserbyINegative" finished-at="2025-05-22T10:54:47 ICT" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserbyINegative -->
+        <test-method signature="updateUserPATCH()[pri:5, instance:ridwan.APITest@6f94fb9d]" started-at="2025-05-22T10:54:47 ICT" name="updateUserPATCH" finished-at="2025-05-22T10:54:48 ICT" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserPATCH -->
+        <test-method signature="validateJsonSchemaGetSingleUser()[pri:6, instance:ridwan.APITest@6f94fb9d]" started-at="2025-05-22T10:54:48 ICT" name="validateJsonSchemaGetSingleUser" finished-at="2025-05-22T10:54:49 ICT" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJsonSchemaGetSingleUser -->
+        <test-method signature="deleteUser()[pri:7, instance:ridwan.APITest@6f94fb9d]" started-at="2025-05-22T10:54:49 ICT" name="deleteUser" finished-at="2025-05-22T10:54:49 ICT" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- ridwan.APITest -->
+    </test> <!-- SimpleTest -->
+  </suite> <!-- SimpleTestSuite -->
+</testng-results>
