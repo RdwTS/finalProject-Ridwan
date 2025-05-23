@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f11fb742-a42c-47dc-9670-38518df3441c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/Main.java" afterDir="false" />
+    <list default="true" id="a722a248-db2a-45d1-b105-f72aad9ce7f0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/page/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/stepdef/ApiStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ridwan/stepdef/CheckoutStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/API.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/checkout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/test-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ridwan/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ridwan/APITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ridwan/CucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ridwan/CucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ridwan/page/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ridwan/page/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +29,72 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="API-WebAutomationGitAction" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
-  <component name="ProjectId" id="2xTmMf8v6uJLH69ypmI9RkGtVeH" />
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1747796959" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1747637957" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1747637956" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2xIS8vAdYdokoSB1FzzxbuNMkFn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,20 +102,158 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: API.executor": "Run",
+    "Cucumber Java.Scenario: Create new user and Delete user.executor": "Run",
+    "Cucumber Java.Scenario: Create new user.executor": "Run",
+    "Cucumber Java.Scenario: Get user by ID.executor": "Run",
+    "Cucumber Java.Scenario: Get user by invalid ID.executor": "Run",
+    "Cucumber Java.Scenario: Get user list.executor": "Run",
+    "Cucumber Java.Scenario: Login using invalid email and password.executor": "Run",
+    "Cucumber Java.Scenario: Login using valid email.executor": "Run",
+    "Cucumber Java.Scenario: Update user.executor": "Run",
+    "Cucumber Java.Scenario: User proceeds to checkout.executor": "Run",
+    "Cucumber Java.Scenario: Validate JSON Schema.executor": "Run",
+    "Cucumber Java.Scenario: running TestNG suite.executor": "Run",
+    "Gradle.APITest.createNewUser.executor": "Run",
+    "Gradle.APITest.deleteUser.executor": "Run",
+    "Gradle.APITest.executor": "Run",
+    "Gradle.APITest.getUserList.executor": "Run",
+    "Gradle.APITest.getUserbyID.executor": "Run",
+    "Gradle.APITest.getUserbyINegative.executor": "Run",
+    "Gradle.APITest.updateUserPATCH.executor": "Run",
+    "Gradle.APITest.updateUserPUT.executor": "Run",
+    "Gradle.APITest.validateJsonSchemaGetSingleUser.executor": "Run",
+    "Gradle.Build API-WebAutomationGitAction.executor": "Run",
+    "Gradle.CucumberTest.executor": "Run",
+    "Gradle.LoginTest.executor": "Debug",
+    "Gradle.LoginTest.loginTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Ridwan/Learn/QA/project/API-WebAutomationGitAction/src/test/java/stepdef",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
+  <component name="RunManager" selected="Cucumber Java.Feature: API">
+    <configuration name="Feature: API" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API.feature" />
+      <option name="GLUE" value="ridwan.stepdef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="API-WebAutomationGitAction.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: API" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Create new user and Delete user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API.feature" />
+      <option name="GLUE" value="ridwan.stepdef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="API-WebAutomationGitAction.test" />
+      <option name="NAME_FILTER" value="^Create new user and Delete user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create new user and Delete user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create new user and Delete user" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Get user list" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API.feature" />
+      <option name="GLUE" value="ridwan.stepdef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="API-WebAutomationGitAction.test" />
+      <option name="NAME_FILTER" value="^Get user list$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Get user list$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Get user list" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Update user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API.feature" />
+      <option name="GLUE" value="ridwan.stepdef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="API-WebAutomationGitAction.test" />
+      <option name="NAME_FILTER" value="^Update user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Update user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Update user" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate JSON Schema" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API.feature" />
+      <option name="GLUE" value="ridwan.stepdef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="API-WebAutomationGitAction.test" />
+      <option name="NAME_FILTER" value="^Validate JSON Schema$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate JSON Schema$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate JSON Schema" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: API" />
+        <item itemvalue="Cucumber Java.Scenario: Create new user and Delete user" />
+        <item itemvalue="Cucumber Java.Scenario: Validate JSON Schema" />
+        <item itemvalue="Cucumber Java.Scenario: Update user" />
+        <item itemvalue="Cucumber Java.Scenario: Get user list" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f11fb742-a42c-47dc-9670-38518df3441c" name="Changes" comment="" />
-      <created>1747970392334</created>
+      <changelist id="a722a248-db2a-45d1-b105-f72aad9ce7f0" name="Changes" comment="" />
+      <created>1747623940695</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1747970392334</updated>
+      <updated>1747623940695</updated>
     </task>
     <servers />
   </component>

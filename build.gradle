@@ -1,19 +1,102 @@
 plugins {
-    id 'java'
+    id("java")
+    id("io.qameta.allure") version "2.12.0"
 }
 
-group = 'org.ridwan'
-version = '1.0-SNAPSHOT'
+group = "org.ridwan"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation("io.github.bonigarcia:webdrivermanager:6.1.0") {
+        exclude group: 'com.google.guava', module: 'guava'
+    }
+    testImplementation("org.seleniumhq.selenium:selenium-java:4.31.0") {
+        exclude group: 'com.google.guava', module: 'guava'
+    }
+
+    testImplementation("io.rest-assured:rest-assured:5.5.1")
+    testImplementation("io.rest-assured:json-schema-validator:5.5.1")
+    implementation("org.json:json:20200518")
+//    testImplementation("org.json:json:20200518")
+
+    //Junit
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+//    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.10.0'
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    //Cucumber
+    testImplementation("io.cucumber:cucumber-junit:7.10.0")
+    testImplementation("io.cucumber:cucumber-java:7.10.0")
+
+    //TestNg
+    testImplementation('org.testng:testng:7.7.0')
+
+    constraints {
+        testImplementation("com.google.guava:guava:33.2.1-jre") {
+            attributes {
+                attribute(Attribute.of("org.gradle.jvm.environment", String), "standard-jvm")
+            }
+        }
+    }
+    //ver11
+//    testImplementation("org.testng:testng:7.11.0")
 }
 
-test {
-    useJUnitPlatform()
+//test {
+//    useJUnit()
+////    useJUnitPlatform()
+//}
+
+tasks.test {
+    useTestNG {
+        suiteXmlFiles = [file('src/test/resources/API-test.xml')]
+    }
+//    useTestNG()
+    testLogging {
+        events "standard_out", "standard_error", "passed", "skipped", "failed"
+        showStandardStreams = true
+    }
+
+    def tags = (findProperty('tags')==null ) ? 'not @exclude' : findProperty('tags') + ' and not @exclude'
+
+    task cucumber (){
+        description("Running Cucumber Test")
+        dependsOn assemble, compileTestJava
+        doLast {
+            javaexec {
+                main = "io.cucumber.core.cli.Main"
+                classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+                args = [
+                        '--plugin','html:reports/testWebAndAPI-report.html',
+                        '--plugin','pretty',
+                        '--glue','ridwan',
+                        '--tags',"${tags}",
+                        'src/test/resources'
+                ]
+            }
+        }
+    }
+
+//    tasks.register('cucumberJUnit', Test) {
+//        useJUnit() // CucumberTest (JUnit)
+//        include '**/CucumberTest.class'
+//
+//        testClassesDirs = sourceSets.test.output.classesDirs
+//        classpath = sourceSets.test.runtimeClasspath
+//
+//        testLogging {
+//            events "passed", "skipped", "failed"
+//        }
+//    }
+
+    configurations{
+        cucumberRuntime{
+            extendsFrom testImplementation
+        }
+    }
+
 }
