@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # API-WebAutomationGitAction
 
 
@@ -50,3 +51,7 @@ Berikut beberapa perintah yang dapat digunakan untuk membangun dan menjalankan p
 ---
 
 Dibuat oleh [RdwTS](https://github.com/RdwTS)
+=======
+# finalProject-Ridwan
+finalProject
+>>>>>>> 5b618cf8403581c4067d077cf66b4aa820184933
