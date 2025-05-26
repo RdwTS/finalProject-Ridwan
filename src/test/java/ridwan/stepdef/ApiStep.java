@@ -14,6 +14,7 @@ import org.testng.TestNG;
 import java.io.File;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -23,6 +24,7 @@ public class ApiStep {
     private Response response;
     private String baseURL;
     public static String createdUserId;
+    public static String seaTag;
 
     //    @Before
 //    public void setup() {
@@ -79,7 +81,7 @@ public class ApiStep {
         JSONObject json = new JSONObject(body);
 
         response = given().log().all()
-                .header("app-id", "63a804408eb0cb069b57e43a")
+                .header("app-id", appId)
                 .header("Content-Type", "application/json")
                 .body(json.toString())
                 .put(endpoint);
@@ -122,7 +124,7 @@ public class ApiStep {
 
         response = RestAssured
                 .given().log().all()
-                .header("app-id", "63a804408eb0cb069b57e43a")
+                .header("app-id", appId)
                 .header("Content-Type", "application/json")
                 .header("Accept", "application/json")
                 .body(fieldJson.toString())
@@ -143,7 +145,7 @@ public class ApiStep {
         String resolvedEndpoint = endpoint.replace("{createdUserId}", createdUserId);
 
         response = given().log().all()
-                .header("app-id", "63a804408eb0cb069b57e43a")
+                .header("app-id", appId)
                 .when().delete(resolvedEndpoint)
                 .then().log().all()
                 .extract().response();
@@ -163,4 +165,38 @@ public class ApiStep {
     }
 
 
+    @And("I extract and store the tag value {string} from the response body")
+    public void iExtractAndStoreTheTagValueFromTheResponseBody(String value) {
+        List<String> tagList = response.jsonPath().getList("data");
+
+        seaTag = tagList.stream()
+                .filter(tag -> tag != null && tag.trim().equalsIgnoreCase(value))
+                .map(String::trim)
+                .findFirst()
+                .orElse(null);
+
+        System.out.println("Tag yang ditemukan: " + seaTag);
+    }
+
+    @And("each item in response body {string} should contain {string}")
+    public void eachItemInResponseBodyShouldContain(String dataBody, String value) {
+        response.then()
+                .assertThat().statusCode(200)
+                .body(dataBody, Matchers.everyItem(Matchers.hasItem(value)));
+
+    }
+
+    @When("I send a GET tag request to {string}")
+    public void iSendAGETTagRequestTo(String endpoint) {
+        String resolvedEndpoint = endpoint.replace("{seaTag}", seaTag);
+
+        response = given().log().all()
+                .header("app-id", appId)
+                .log().all() // log request
+                .when()
+                .get(resolvedEndpoint)
+                .then().log().all() // log response
+                .extract().response();
+
+    }
 }

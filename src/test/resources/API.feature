@@ -39,3 +39,11 @@
       And I store the created user ID
       When I send a DELETE request to "data/v1/user/{createdUserId}"
       Then the response status code should be 200
+
+    Scenario: Get tag list, store "sea" tag, and verify posts filtered by the tag
+      When I send a GET request to "data/v1/tag"
+      Then the response status code should be 200
+      And I extract and store the tag value "sea" from the response body
+      When I send a GET tag request to "data/v1/tag/{seaTag}/post"
+      Then the response status code should be 200
+      And each item in response body "data.tags" should contain "sea"

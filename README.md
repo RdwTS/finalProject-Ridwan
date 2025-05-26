@@ -49,6 +49,9 @@ Berikut beberapa perintah yang dapat digunakan untuk membangun dan menjalankan p
 
 - Pastikan konfigurasi `ci.yml` sesuai dengan kebutuhan proyek Anda
 - Workflow ini hanya sebagai contoh dasar dan dapat dikembangkan lebih lanjut
+- **Personal Access Token (PAT)** yang digunakan pada **Repository Settings > Secrets and Variables > Actions** akan **kedaluwarsa pada 21 Agustus 2025**
+- Pastikan Anda memperbarui token tersebut sebelum tanggal tersebut agar workflow tetap berjalan dengan baik
+- Gunakan token dengan akses minimal yang diperlukan untuk keamanan
 
 ---
 

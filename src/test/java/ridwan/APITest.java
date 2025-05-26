@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 //import static jdk.internal.vm.vector.VectorSupport.extract;
@@ -17,6 +18,7 @@ import static io.restassured.RestAssured.given;
 public class APITest {
 
     public static String createdUserId;
+    public static String seaTag;
     String baseURL = "https://dummyapi.io/";
     String URLApi = "data/v1/user/";
 
@@ -192,6 +194,44 @@ public class APITest {
                 .when().delete(URLApi + createdUserId)
                 .then().log().all()
                 .assertThat().statusCode(200);
+
+    }
+
+    @Test(priority = 9)
+    public  void getTagList() {
+        RestAssured.baseURI = baseURL ;
+
+        Response response = given().header("app-id", "63a804408eb0cb069b57e43a")
+                .when().get("data/v1/tag")
+                .then()
+                .log().all()
+                .assertThat().statusCode(200)
+                .extract().response();
+
+        List<String> tagList = response.jsonPath().getList("data");
+
+        seaTag = tagList.stream()
+                .filter(tag -> tag != null && tag.trim().equalsIgnoreCase("sea"))
+                .map(String::trim)
+                .findFirst()
+                .orElse(null);
+
+        System.out.println("Tag yang ditemukan: " + seaTag);
+
+    }
+
+    @Test(priority = 10)
+    public  void getTagByFilter() {
+        RestAssured.baseURI = baseURL;
+
+        Response response = given().log().all()
+                .header("app-id", "63a804408eb0cb069b57e43a")
+                .when().get("data/v1/tag/"+seaTag+"/post")
+                .then()
+                .log().all()
+                .assertThat().statusCode(200)
+                .body("data.tags", Matchers.everyItem(Matchers.hasItem(seaTag)))
+                .extract().response();
 
     }
 
